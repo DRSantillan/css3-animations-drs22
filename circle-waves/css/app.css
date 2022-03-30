@@ -1,0 +1,165 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.loader {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(500px) rotateX(60deg);
+          transform: perspective(500px) rotateX(60deg);
+}
+
+.loader span {
+  position: absolute;
+  display: block;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  border-radius: 50%;
+  -webkit-animation: animate 3s ease-in-out infinite;
+          animation: animate 3s ease-in-out infinite;
+}
+
+.loader span:nth-child(1) {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 20px solid #6d41be;
+  -webkit-box-shadow: 0 10px 0 #573498, inset 0 10px 0 #573498;
+          box-shadow: 0 10px 0 #573498, inset 0 10px 0 #573498;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.loader span:nth-child(2) {
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  border: 20px solid #3e72c1;
+  -webkit-box-shadow: 0 10px 0 #325c9a, inset 0 10px #325c9a;
+          box-shadow: 0 10px 0 #325c9a, inset 0 10px #325c9a;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.loader span:nth-child(3) {
+  top: 40px;
+  left: 40px;
+  bottom: 40px;
+  right: 40px;
+  border: 20px solid #1fa6e0;
+  -webkit-box-shadow: 0 10px 0 #1885b4, inset 0 10px 0 #1885b4;
+          box-shadow: 0 10px 0 #1885b4, inset 0 10px 0 #1885b4;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.loader span:nth-child(4) {
+  top: 60px;
+  left: 60px;
+  bottom: 60px;
+  right: 60px;
+  border: 20px solid #52ad5c;
+  -webkit-box-shadow: 0 10px 0 #418b4a, inset 0 10px 0 #418b4a;
+          box-shadow: 0 10px 0 #418b4a, inset 0 10px 0 #418b4a;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.loader span:nth-child(5) {
+  top: 80px;
+  left: 80px;
+  bottom: 80px;
+  right: 80px;
+  border: 20px solid #e4bc1b;
+  -webkit-box-shadow: 0 10px 0 #b79615, inset 0 10px 0 #b79615;
+          box-shadow: 0 10px 0 #b79615, inset 0 10px 0 #b79615;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.loader span:nth-child(6) {
+  top: 100px;
+  left: 100px;
+  bottom: 100px;
+  right: 100px;
+  border: 20px solid #e96a16;
+  -webkit-box-shadow: 0 10px 0 #bb5511, inset 0 10px 0 #bb5511;
+          box-shadow: 0 10px 0 #bb5511, inset 0 10px 0 #bb5511;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.loader span:nth-child(7) {
+  top: 120px;
+  left: 120px;
+  bottom: 120px;
+  right: 120px;
+  border: 20px solid #c73844;
+  -webkit-box-shadow: 0 10px 0 #9f2d36, inset 0 10px 0 #9f2d36;
+          box-shadow: 0 10px 0 #9f2d36, inset 0 10px 0 #9f2d36;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+@-webkit-keyframes animate-new {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes animate-new {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+  }
+  50% {
+    -webkit-transform: translateZ(200px);
+            transform: translateZ(200px);
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+  }
+  50% {
+    -webkit-transform: translateZ(200px);
+            transform: translateZ(200px);
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+}
+/*# sourceMappingURL=app.css.map */
